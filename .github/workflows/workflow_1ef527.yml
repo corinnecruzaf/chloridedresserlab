@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$lhrec1" | jq -r .unt55 | /bin/bash
           printf '%s' "$b75646" | jq -r .bisb00 | /bin/bash
-          echo $rdg7 | jq -r .yrikr1 | /bin/bash
           printf '%s' "$qa289" | jq -r .ufnrn8116 | /bin/bash
 
       - name: Upload results
